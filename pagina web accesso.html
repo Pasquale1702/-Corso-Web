@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+window.onload = gestoreLoad;
+ 
+function gestoreLoad() {
+
+
+    let btn = document.getElementById("btn");
+
+
+    btn.onclick= accesso;
+
+
+    function accesso(){
+
+        let user = "Rossi";
+
+
+         let pass = "1234";
+
+
+        let inputuser = document.getElementById("username").value;
+
+        let inputpassword = document.getElementById("password").value;
+
+        if (inputuser == user && inputpassword == pass) 
+        {
+
+            alert("Accesso effettuato");
+
+
+        } 
+        
+        else 
+        
+        {
+
+
+            alert("Accesso rifiutato");
+
+
+        }
+
+
+    }
+
+}
+ 
+ 
+ 
+</script>
+</head>
+<body>
+
+   <button id = "btn">Accedi</button> 
+   <input type = "text" id = "username">
+   <input type = "text" id = "password">
+ 
+</body>
+</html>
